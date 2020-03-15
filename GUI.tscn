@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://GUI.gd" type="Script" id=1]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+follow_viewport_enable = true
+
+[node name="GUI" type="RichTextLabel" parent="."]
+margin_left = 38.0
+margin_top = 38.0
+margin_right = 228.0
+margin_bottom = 101.0
+scroll_active = false
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

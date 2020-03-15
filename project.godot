@@ -16,6 +16,25 @@ _global_script_class_icons={
 [application]
 
 config/name="Lilypad Lagoon"
+run/main_scene="res://World.tscn"
+boot_splash/image="res://splash.png"
+
+[autoload]
+
+Lotad="*res://Lotad.tscn"
+
+[display]
+
+window/size/resizable=false
+window/dpi/allow_hidpi=true
+
+[layer_names]
+
+3d_physics/layer_1="Flowers"
+
+[physics]
+
+common/physics_jitter_fix=0.0
 
 [rendering]
 

@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Lotad.gd" type="Script" id=1]
+
+[sub_resource type="CylinderShape" id=2]
+height = 1.0
+
+[sub_resource type="CylinderMesh" id=3]
+height = 1.0
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 0, 0.870588, 0.219608, 1 )
+
+[node name="Lotad" type="KinematicBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
+collision_layer = 0
+script = ExtResource( 1 )
+drag = 0.25
+max_speed = 0.25
+acceleration = 0.5
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = SubResource( 3 )
+material/0 = SubResource( 4 )
