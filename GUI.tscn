@@ -2,14 +2,16 @@
 
 [ext_resource path="res://GUI.gd" type="Script" id=1]
 
-[node name="CanvasLayer" type="CanvasLayer"]
+[node name="GUI" type="CanvasLayer"]
 follow_viewport_enable = true
 
-[node name="GUI" type="RichTextLabel" parent="."]
+[node name="Score" type="RichTextLabel" parent="."]
 margin_left = 38.0
 margin_top = 38.0
 margin_right = 228.0
 margin_bottom = 101.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "score: 0"
 scroll_active = false
 script = ExtResource( 1 )
 __meta__ = {
