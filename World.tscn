@@ -28,6 +28,7 @@ material/0 = null
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.621326, 0.783553, 0, -0.783553, 0.621326, 0.177952, 21.1477, 21.9146 )
 projection = 1
+current = true
 size = 50.0
 
 [node name="CanvasLayer" parent="." instance=ExtResource( 2 )]
