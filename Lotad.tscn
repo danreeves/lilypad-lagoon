@@ -1,15 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Lotad.gd" type="Script" id=1]
+[ext_resource path="res://m_lotad.tscn" type="PackedScene" id=2]
 
-[sub_resource type="CylinderShape" id=2]
+[sub_resource type="CylinderShape" id=1]
 height = 1.0
-
-[sub_resource type="CylinderMesh" id=3]
-height = 1.0
-
-[sub_resource type="SpatialMaterial" id=4]
-albedo_color = Color( 0, 0.870588, 0.219608, 1 )
 
 [node name="Lotad" type="KinematicBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
@@ -20,8 +15,7 @@ max_speed = 0.25
 acceleration = 0.5
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 
-[node name="MeshInstance" type="MeshInstance" parent="."]
-mesh = SubResource( 3 )
-material/0 = SubResource( 4 )
+[node name="m_lotad" parent="." instance=ExtResource( 2 )]
+transform = Transform( 10, 0, 0, 0, -4.37114e-07, 10, 0, -10, -4.37114e-07, 0, -0.5, 0 )
