@@ -1,6 +1,6 @@
 extends Spatial
 
-var Flower = load("res://Flower.tscn")
+var Flower = load("res://entities/flower/Flower.tscn")
 
 func _ready():
 	pass # Replace with function body.

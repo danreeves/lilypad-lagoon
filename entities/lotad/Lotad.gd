@@ -4,7 +4,7 @@ export (float) var drag = 0.5
 export (float) var max_speed = 5
 export (float) var acceleration = 1.5
 
-var Flower = ResourceLoader.load("res://Flower.tscn")
+var Flower = ResourceLoader.load("res://entities/flower/Flower.tscn")
 var velocity = Vector3()
 var num_flowers = 0
 

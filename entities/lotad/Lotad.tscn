@@ -1,7 +1,9 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Lotad.gd" type="Script" id=1]
-[ext_resource path="res://m_lotad.tscn" type="PackedScene" id=2]
+[ext_resource path="res://entities/lotad/Lotad.gd" type="Script" id=1]
+[ext_resource path="res://entities/lotad/m_lotad.tscn" type="PackedScene" id=2]
+
+
 
 [sub_resource type="CylinderShape" id=1]
 height = 1.0

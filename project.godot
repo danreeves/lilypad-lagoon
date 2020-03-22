@@ -16,17 +16,15 @@ _global_script_class_icons={
 [application]
 
 config/name="Lilypad Lagoon"
-run/main_scene="res://World.tscn"
-boot_splash/image="res://splash.png"
+run/main_scene="res://entities/world/World.tscn"
+boot_splash/image="res://images/splash.png"
 
 [autoload]
 
-Lotad="*res://Lotad.tscn"
+Lotad="*res://entities/lotad/Lotad.tscn"
 
 [display]
 
-window/size/width=1920
-window/size/height=1080
 window/size/resizable=false
 window/dpi/allow_hidpi=true
 
