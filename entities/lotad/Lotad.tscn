@@ -3,24 +3,19 @@
 [ext_resource path="res://entities/lotad/Lotad.gd" type="Script" id=1]
 [ext_resource path="res://entities/lotad/m_lotad.tscn" type="PackedScene" id=2]
 
-
-
 [sub_resource type="CylinderShape" id=1]
 height = 1.0
 
 [node name="Lotad" type="KinematicBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 0, 0.5, 0 )
 collision_layer = 0
 script = ExtResource( 1 )
-drag = 0.25
-max_speed = 0.25
-acceleration = 0.5
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 shape = SubResource( 1 )
 
 [node name="m_lotad" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0 )
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 0, -0.5, 0 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( -1, 8.4334e-08, -3.14739e-07, 0, 0.965926, 0.258819, 3.25841e-07, 0.258819, -0.965926, 0, 2, -3 )
+transform = Transform( 1, 1.45873e-07, 3.44762e-08, -1.45873e-07, 0.894193, 0.447681, 3.44762e-08, -0.447681, 0.894193, -1.56145e-06, 2.62066, 4.79207 )

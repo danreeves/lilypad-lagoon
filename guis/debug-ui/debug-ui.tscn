@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://guis/debug-ui/debug output.gd" type="Script" id=1]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="debug output" type="RichTextLabel" parent="."]
+margin_left = 584.0
+margin_top = 64.0
+margin_right = 880.0
+margin_bottom = 216.0
+rect_scale = Vector2( 2.28865, 4.40862 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "debug output here"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
