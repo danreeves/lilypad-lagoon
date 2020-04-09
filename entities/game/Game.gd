@@ -1,11 +1,20 @@
 extends Spatial
+class_name Game
 
 var Flower = load("res://entities/flower/Flower.tscn")
+var Lotad = load("res://entities/lotad/Lotad.tscn")
 
-func _ready():
-	pass # Replace with function body.
+var player = null
 
-func _process(_dt):
+func _ready() -> void:
+	player = Lotad.instance()
+	# warning-ignore:unsafe_property_access
+	find_node("Score").player = player
+	# warning-ignore:unsafe_property_access
+	find_node("Debug").player = player
+	add_child(player)
+
+func _process(_dt) -> void:
 	if find_node("Flower", true, false) != null:
 		return
 	else:

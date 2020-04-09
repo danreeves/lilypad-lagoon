@@ -8,20 +8,37 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Spatial",
+"class": "Game",
+"language": "GDScript",
+"path": "res://entities/game/Game.gd"
+}, {
+"base": "KinematicBody",
+"class": "Lotad",
+"language": "GDScript",
+"path": "res://entities/lotad/Lotad.gd"
+} ]
 _global_script_class_icons={
-
+"Game": "",
+"Lotad": ""
 }
 
 [application]
 
 config/name="Lilypad Lagoon"
-run/main_scene="res://entities/world/World.tscn"
+run/main_scene="res://entities/game/Game.tscn"
 boot_splash/image="res://images/splash.png"
 
-[autoload]
+[debug]
 
-Lotad="*res://entities/lotad/Lotad.tscn"
+gdscript/warnings/treat_warnings_as_errors=true
+gdscript/completion/autocomplete_setters_and_getters=true
+gdscript/warnings/unused_class_variable=true
+gdscript/warnings/unsafe_property_access=true
+gdscript/warnings/unsafe_method_access=true
+gdscript/warnings/unsafe_cast=true
+gdscript/warnings/unsafe_call_argument=true
 
 [display]
 
